@@ -1,0 +1,77 @@
+/* Custom styles for OpenClaw Docs VI */
+
+/* Custom cards styling */
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.card {
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 1.5rem;
+  background-color: #f6f8fa;
+}
+
+/* Custom labels */
+.label {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.label-blue { background-color: #0366d6; color: white; }
+.label-green { background-color: #28a745; color: white; }
+.label-purple { background-color: #6f42c1; color: white; }
+.label-orange { background-color: #f66a0a; color: white; }
+
+/* Heading styles */
+.heading-todo {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grid.cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Code block enhancements */
+.highlight {
+  background-color: #f6f8fa;
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+/* Note callouts */
+.note {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid #0366d6;
+  background-color: #f8f9fa;
+}
+
+.tip {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid #28a745;
+  background-color: #f8f9fa;
+}
+
+.warning {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid #ffc107;
+  background-color: #fff3cd;
+}
